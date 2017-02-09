@@ -1,0 +1,13 @@
+version: '2'
+services:
+   synapse:
+      build:
+         context: ./build/docker-synapse
+         dockerfile: Dockerfile
+         args:
+            username: "synapse"
+      image: synapse:latest
+      ports:
+         - "80:80"
+      volumes:
+         - "./run/config:/home/${username}/config"
