@@ -10,4 +10,4 @@ services:
       ports:
          - "80:80"
       volumes:
-         - "./run/config:/home/${username}/config"
+         - "./run/config:/home/synapse/config"

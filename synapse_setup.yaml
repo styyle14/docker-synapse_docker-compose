@@ -4,7 +4,7 @@ services:
       extends:
          file: ./synapse.yaml
          service: synapse
-      command: bash -c "setup.sh"
+      command: bash -c "./setup.sh"
       volumes:
          - "./run/setup.sh:/home/synapse/setup.sh"
 

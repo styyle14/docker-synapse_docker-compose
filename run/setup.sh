@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -x
+#set -x
 set -e
 
 echo -n "Synapse Domain Name: "
@@ -14,7 +14,7 @@ fi
 
 python -m synapse.app.homeserver \
     --server-name "$SYNAPSE_DOMAIN_NAME" \
-    --config-path homeserver.yaml \
+    --config-path "config/homeserver.yaml" \
     --generate-config \
     --report-stats=yes
 
