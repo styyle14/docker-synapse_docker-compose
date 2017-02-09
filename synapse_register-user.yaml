@@ -1,0 +1,10 @@
+version: '2'
+services:
+   synapse_register-user:
+      extends:
+         file: ./synapse.yaml
+         service: synapse
+      command: bash -c "./register-user.sh"
+      volumes:
+         - "./run/register-user.sh:/home/synapse/register-user.sh"
+
