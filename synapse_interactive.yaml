@@ -1,6 +1,6 @@
 version: '2'
 services:
-   synapse_register-user:
+   synapse_interactive:
       extends:
          file: ./synapse.yaml
          service: synapse
