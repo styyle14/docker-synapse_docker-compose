@@ -8,6 +8,6 @@ services:
             username: "synapse"
       image: synapse:latest
       ports:
-         - "80:80"
+         - "8448:8448"
       volumes:
          - "./run/config:/home/synapse/config"
