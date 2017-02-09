@@ -1,0 +1,8 @@
+version: '2'
+services:
+   synapse_register-user:
+      extends:
+         file: ./synapse.yaml
+         service: synapse
+      command: bash -c "/bin/bash"
+
